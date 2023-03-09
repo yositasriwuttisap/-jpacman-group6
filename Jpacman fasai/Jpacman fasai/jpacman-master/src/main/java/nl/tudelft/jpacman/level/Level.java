@@ -312,9 +312,6 @@ public class Level {
         return pellets;
     }
 
-    public void setVisible(boolean b) {
-    }
-
     /**
      * A task that moves an NPC and reschedules itself after it finished.
      *
