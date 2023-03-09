@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class LevelSelect {
-    JFrame frame;
+    public JFrame frame;
     private JButton[] levelButtons;
     private int selectedLevel;
 
@@ -79,6 +79,9 @@ public class LevelSelect {
                 System.out.println(levelName);
                 Launcher.board(levelName);
                 Launcher.launch();
+
+                // Close the level select window
+                frame.dispose();
             }
         });
 

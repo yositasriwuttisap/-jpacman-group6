@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 
 public class MenuFrame extends JFrame {
 
@@ -28,6 +32,7 @@ public class MenuFrame extends JFrame {
         formPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         JLabel nameLabel = new JLabel("Name:");
         nameField = new JTextField(20);
+        nameField.setFont(new Font("Tahoma", Font.PLAIN, 14));
         formPanel.add(nameLabel);
         formPanel.add(nameField);
 
@@ -54,10 +59,21 @@ public class MenuFrame extends JFrame {
         if (name.trim().isEmpty()) {
             name = "anonymous";
         }
+
+        // write name to file
+        try (PrintWriter out = new PrintWriter(new FileWriter("C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\name.txt", StandardCharsets.UTF_8,true))) {
+            out.println(name);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
         JFrame levelSelectFrame = new LevelSelect().frame;
         levelSelectFrame.setVisible(true);
         dispose();
     }
+
 
 
     public static void main(String[] args) {
