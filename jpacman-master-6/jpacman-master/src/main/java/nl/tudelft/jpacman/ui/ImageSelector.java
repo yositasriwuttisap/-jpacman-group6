@@ -13,7 +13,7 @@ public class ImageSelector extends JFrame implements ActionListener {
     // instance variables
     private JLabel imageLabel;
     private int currentIndex = 0;
-    private String[] imageFiles = new String[] {"src/main/resources/img/image0.png", "src/main/resources/img/image1.png", "src/main/resources/img/mage2.png"
+    private String[] imageFiles = new String[] {"src/main/resources/img/image0.png", "src/main/resources/img/image1.png", "src/main/resources/img/image2.png"
     ,"src/main/resources/img/image3.png","src/main/resources/img/image4.png"};
 
     private ImageIcon leftIcon, rightIcon, backIcon, playIcon;
@@ -22,7 +22,7 @@ public class ImageSelector extends JFrame implements ActionListener {
 
     // constructor
     public ImageSelector() {
-        super("Image Selector");
+        super("Map JPacman");
 
         // create UI components
         JPanel mainPanel = new JPanel(new BorderLayout());

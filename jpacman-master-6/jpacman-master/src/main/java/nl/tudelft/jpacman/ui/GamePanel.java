@@ -96,7 +96,7 @@ public class GamePanel extends JPanel {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Game");
+        JFrame frame = new JFrame("Menu JPacman");
         GamePanel gamePanel = new GamePanel();
         frame.getContentPane().add(gamePanel);
         frame.pack();
