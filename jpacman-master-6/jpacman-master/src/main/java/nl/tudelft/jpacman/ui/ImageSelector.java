@@ -3,6 +3,7 @@ package nl.tudelft.jpacman.ui;
 import nl.tudelft.jpacman.Launcher;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -79,11 +80,12 @@ public class ImageSelector extends JFrame implements ActionListener {
         //backButton.setPreferredSize(new Dimension(128, 48));
         playButton.setPreferredSize(new Dimension(128, 48));
 
-        containerImage.setBorder(BorderFactory.createMatteBorder(
-            5, 5, 0, 5, Color.white));
+        containerImage.setBorder(BorderFactory.createDashedBorder(Color.white, 5, 5, 5, false));
 
-        arrowPanel.setBorder(BorderFactory.createMatteBorder(
-            0, 5, 5, 5, Color.white));
+
+
+//        arrowPanel.setBorder(BorderFactory.createMatteBorder(
+//            0, 5, 5, 5, Color.white));
         // add components to panels
         arrowPanel.add(leftButton);
         arrowPanel.add(rightButton);
@@ -127,8 +129,9 @@ public class ImageSelector extends JFrame implements ActionListener {
 
         // set frame properties
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         setContentPane(mainPanel);
-        setSize(917, 920);
+        setSize(458, 460);
         setVisible(true);
 
         // set initial image

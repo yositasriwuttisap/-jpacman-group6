@@ -100,8 +100,11 @@ public class GamePanel extends JPanel {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Menu JPacman");
         GamePanel gamePanel = new GamePanel();
+//        frame.setUndecorated(true);
         frame.getContentPane().add(gamePanel);
+        frame.setPreferredSize(new Dimension(517, 520));
         frame.pack();
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
