@@ -128,7 +128,7 @@ public class ImageSelector extends JFrame implements ActionListener {
         // set frame properties
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(mainPanel);
-        setSize(600, 800);
+        setSize(917, 920);
         setVisible(true);
 
         // set initial image
