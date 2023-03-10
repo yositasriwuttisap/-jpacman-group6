@@ -46,10 +46,30 @@ As a player
  I want to start the game
 so that I can actually play
  
-Scenario S1.1: Start.
-Given the user has launched the JPacman GUI;
-When  the user presses the "Start" button;
-Then  the game should start.
+Scenario S1.1: การใส่ชื่อ.
+กำหนดให้ user อยู่หน้า Menu Jpacman;
+เมื่อ   user กรอกชื่อ ในช่องใส่ชื่อ,
+และ user กดปุ่ม "play";
+ดังนั้น  เกมจะบันทึกชื่อผู้เล่นไว้.
+
+Scenario S1.2: การกด Play.
+กำหนดให้ user อยู่หน้า Menu Jpacman และกรอกชื่อแล้ว;
+เมื่อ user กดปุ่ม "play";
+ดังนั้น เกมจะเปลี่ยนไปที่หน้า Map Jpacman.
+
+Scenario S1.3: การเลือกด่าน
+กำหนดให้ user อยู่หน้า Map Jpacman;
+เมื่อ user กดปุ่ม "ซ้าย";
+ดังนั้น เกมควรจะเลื่อนด่านไปฝั่งซ้าย.
+และ เมื่อ user กดปุ่ม "ขวา"
+ดังนั้น เกมจะเลื่อนด่านไปฝั่งขวา.
+
+Scenario S1.4: การกด Start.
+กำหนดให้ user อยู่หน้า Menu Jpacman และเลือกด่านแล้ว;
+เมื่อ user กดปุ่ม "Start";
+ดังนั้น เกมจะเปลี่ยนไปที่หน้า Start Jpacman พร้อมกับด่านที่เลือกแล้ว.
+
+
 ```
 
 
