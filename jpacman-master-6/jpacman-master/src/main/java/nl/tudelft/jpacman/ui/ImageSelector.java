@@ -13,8 +13,8 @@ public class ImageSelector extends JFrame implements ActionListener {
     // instance variables
     private JLabel imageLabel;
     private int currentIndex = 0;
-    private String[] imageFiles = new String[] {"C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\image0.png", "C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\image1.png", "C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\image2.png"
-    ,"C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\image3.png","C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\image4.png"};
+    private String[] imageFiles = new String[] {"src/main/resources/img/image0.png", "src/main/resources/img/image1.png", "src/main/resources/img/mage2.png"
+    ,"src/main/resources/img/image3.png","src/main/resources/img/image4.png"};
 
     private ImageIcon leftIcon, rightIcon, backIcon, playIcon;
     private JButton leftButton, rightButton, backButton, playButton;
@@ -34,10 +34,10 @@ public class ImageSelector extends JFrame implements ActionListener {
         imageLabel = new JLabel();
 
         // create image icons and buttons
-        leftIcon = new ImageIcon("C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\left-arrow.png");
-        rightIcon = new ImageIcon("C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\right-arrow.png");
-        backIcon = new ImageIcon("C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\back-button.png");
-        playIcon = new ImageIcon("C:\\Users\\LENOVO\\Downloads\\jpacman-master-6\\jpacman-master\\src\\main\\resources\\img\\play-button.png");
+        leftIcon = new ImageIcon("src/main/resources/img/left-arrow.png");
+        rightIcon = new ImageIcon("src/main/resources/img/right-arrow.png");
+        backIcon = new ImageIcon("src/main/resources/img/back-button.png");
+        playIcon = new ImageIcon("src/main/resources/img/play-button.png");
         leftButton = new JButton(leftIcon);
         rightButton = new JButton(rightIcon);
         backButton = new JButton(backIcon);
