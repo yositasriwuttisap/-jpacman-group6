@@ -37,10 +37,10 @@ public class ImageSelector extends JFrame implements ActionListener {
         leftIcon = new ImageIcon("src/main/resources/img/left-arrow.png");
         rightIcon = new ImageIcon("src/main/resources/img/right-arrow.png");
         backIcon = new ImageIcon("src/main/resources/img/back-button.png");
-        playIcon = new ImageIcon("src/main/resources/img/play-button.png");
+        playIcon = new ImageIcon("src/main/resources/img/start_button_128_49.png");
         leftButton = new JButton(leftIcon);
         rightButton = new JButton(rightIcon);
-        backButton = new JButton(backIcon);
+        //backButton = new JButton(backIcon);
         playButton = new JButton(playIcon);
         playButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -70,13 +70,13 @@ public class ImageSelector extends JFrame implements ActionListener {
         rightButton.setFocusPainted(false);
         leftButton.setContentAreaFilled(false);
         rightButton.setContentAreaFilled(false);
-        backButton.setContentAreaFilled(false); // make button transparent
-        backButton.setFocusPainted(false); // remove focus border
+        //backButton.setContentAreaFilled(false); // make button transparent
+        //backButton.setFocusPainted(false); // remove focus border
         playButton.setContentAreaFilled(false); // make button transparent
         playButton.setFocusPainted(false); // remove focus border
 
         // set back button and play button size
-        backButton.setPreferredSize(new Dimension(128, 48));
+        //backButton.setPreferredSize(new Dimension(128, 48));
         playButton.setPreferredSize(new Dimension(128, 48));
 
         containerImage.setBorder(BorderFactory.createMatteBorder(
@@ -87,7 +87,7 @@ public class ImageSelector extends JFrame implements ActionListener {
         // add components to panels
         arrowPanel.add(leftButton);
         arrowPanel.add(rightButton);
-        bottomPanel.add(backButton);
+        //bottomPanel.add(backButton);
 
         Dimension minSize = new Dimension(20, 0);
         Dimension prefSize = new Dimension(20, 0);
@@ -113,7 +113,7 @@ public class ImageSelector extends JFrame implements ActionListener {
         rightButton.setBackground(Color.decode("#200D29"));
 
         // remove border button
-        backButton.setBorderPainted(false);
+        //backButton.setBorderPainted(false);
         playButton.setBorderPainted(false);
         leftButton.setBorderPainted(false);
         rightButton.setBorderPainted(false);
@@ -128,7 +128,7 @@ public class ImageSelector extends JFrame implements ActionListener {
         // set frame properties
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(mainPanel);
-        setSize(400, 400);
+        setSize(600, 800);
         setVisible(true);
 
         // set initial image

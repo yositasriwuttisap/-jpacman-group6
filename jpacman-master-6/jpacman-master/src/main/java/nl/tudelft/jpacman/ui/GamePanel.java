@@ -17,9 +17,11 @@ public class GamePanel extends JPanel {
 
     public GamePanel() {
         setLayout(new GridBagLayout());
+
         setBackground(new Color(32, 13, 41));
         // Create the logo label and add it to the panel
-        ImageIcon logoIcon = new ImageIcon("src/main/resources/img/jpacicon_200_111.png");
+        ImageIcon logoIcon = new ImageIcon("src/main/resources/img/jpacicon_400_221.png");
+        setSize(800, 800);
         logoLabel = new JLabel(logoIcon);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -48,7 +50,7 @@ public class GamePanel extends JPanel {
         add(nameField, gbc);
 
         // Create the start game button and add it to the panel
-        ImageIcon startIcon = new ImageIcon("src/main/resources/img/start_button_128_49.png");
+        ImageIcon startIcon = new ImageIcon("src/main/resources/img/play-button.png");
         startButton = new JButton(startIcon);
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
